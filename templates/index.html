@@ -3,6 +3,32 @@
 {% block title %}Rust-Axum-Askama{% endblock %}
 
 {% block content %}
-<div>
-</div>
-{% endblock %}
+<div class="flex flex-col h-screen items-center justify-center">
+  <div class="max-w-3xl mx-auto p-6">
+    <header class="text-center py-6 border-b">
+      <h1 class="text-3xl font-bold">Rust-Axum-Askama App</h1>
+      <p class="text-gray-600 mt-2">Get up and running with web development in Rust.</p>
+    </header>
+    <main class="py-6">
+      <section>
+        <h2 class="text-2xl font-semibold">Technologies Used</h2>
+        <ul class="list-disc list-inside mt-2 text-gray-700">
+          <li><a href="https://github.com/tokio-rs/axum" class="text-blue-600 hover:underline">Axum</a> - Web framework
+          </li>
+          <li><a href="https://github.com/rinja-rs/askama" class="text-blue-600 hover:underline">Askama</a> - Templating
+            engine</li>
+          <li><a href="https://htmx.org" class="text-blue-600 hover:underline">Htmx</a> - Page creation</li>
+          <li><a href="https://tailwindcss.com" class="text-blue-600 hover:underline">Tailwind CSS</a> - Styling</li>
+          <li><a href="https://alpinejs.dev" class="text-blue-600 hover:underline">Alpine.js</a> - Interactivity</li>
+        </ul>
+      </section>
+      <section class="mt-6">
+        <h2 class="text-2xl font-semibold">Running and Developing</h2>
+        <li class="mt-2 text-gray-700">Follow the <a
+            href="https://github.com/Jooonnnaass/rust-axum-askama-app#running-and-developing"
+            class="hover:underline text-blue-600">documentation</a> to set
+          up and run the project.</li>
+      </section>
+    </main>
+  </div>
+  {% endblock %}

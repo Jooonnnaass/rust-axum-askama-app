@@ -10,8 +10,23 @@ This template uses the following technologies:
 - [Tailwindcss](https://tailwindcss.com) for styling
 - [Alpine.js](https://alpinejs.dev) to add more interactivity
 
-The app is then deployed with [docker](https://www.docker.com).
-
 # Running and Developing
 
-# Deploying with Docker
+For the template to work you need the following dependencies:
+- Rust toolchain
+- Tailwindcss cli
+- Just
+
+To get this template runnig just clone the repository and run the following just command:
+
+```sh
+just run
+```
+
+This will build the app and run it. Just go to [localhost:3000](http://127.0.0.1:3000) to see the page running.
+
+If you want to start the app in developing mode so the code rebuilds on changes run this command:
+
+```sh
+just dev
+```

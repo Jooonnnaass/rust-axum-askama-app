@@ -1,5 +1,3 @@
-set dotenv-load := true
-
 run: tailwind
 	cargo run
 
@@ -11,6 +9,3 @@ build-dev: tailwind
 
 tailwind:
 	npx @tailwindcss/cli --i styles/style.css --o public/style.css
-
-psql:
-	psql "dbname=$PGDATABASE host=$PGHOST user=$PGUSER password=$PGPASSWORD port=$PGPORT"
